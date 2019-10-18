@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-@WebServlet("/hello-world")
+@WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 
     @Override
@@ -14,8 +14,9 @@ public class HelloWorldServlet extends HttpServlet {
         String name = req.getParameter("name");
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
-        if (name == null){
-            out.println("<h1>Hello, world!</h1>");
+        if (name == null || name.isEmpty()){
+            name = "World";
+            out.println("<h1>Hello, " + name + "!</h1>");
         } else
         out.println("<h1>Hello, " + name + "!</h1>");
 

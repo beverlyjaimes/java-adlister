@@ -45,8 +45,20 @@ public class CountServlet extends HttpServlet {
                     "<h1 align = \"center\">" + title + "</h1>\n" +
                     "<h2 align = \"center\">" + hitCount + "</h2>\n" +
                     "</body> </html>");
-        }
 
+
+        }
+//    //(inside doget)
+//    //int count = 0;
+////    count++
+//    //res.setContentType("text/html")
+////      PrintWriter out = res.getWriter();
+//    //out.println("<h1> you have visted this page " + count + " times<h1>");
+////    String reset = req.getParameter("reset")
+////
+//////    if(reset != null){
+//////        count = 0;
+//////    }
 
     }
 }
