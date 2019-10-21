@@ -11,6 +11,7 @@
 <html>
 <head>
     <title>login</title>
+<jsp:include page="/partials/navbar.jsp"/>
 </head>
 <body>
 <h1>Please enter your information</h1>
@@ -28,5 +29,6 @@
    </c:when>
 </c:choose>
 
+<jsp:include page="/partials/footer.jsp"/>
 </body>
 </html>
