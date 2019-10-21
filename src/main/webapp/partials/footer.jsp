@@ -12,7 +12,7 @@
     footer {
         margin: auto;
         padding: 0;
-        background-color: cornflowerblue;
+        background-color: darkslategrey;
         position: fixed;
         left: 0;
         bottom: 0;

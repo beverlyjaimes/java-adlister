@@ -11,9 +11,15 @@
     <title>navbar</title>
     <style>
         nav {
-            background:purple;
-            margin: 0;
+            margin: auto;
             padding: 0;
+            background-color: darkslategrey;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
         }
 
     </style>

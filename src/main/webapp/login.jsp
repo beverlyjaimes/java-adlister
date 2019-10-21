@@ -12,17 +12,19 @@
 <head>
     <title>login</title>
 <jsp:include page="/partials/navbar.jsp"/>
+    <jsp:include page="partials/head.jsp"/>
 </head>
 <body>
+<div>
 <h1>Please enter your information</h1>
-<form action="login.jsp" method="post">
+<form  action="login.jsp" method="post">
     <label for="username">Username:</label>
     <input placeholder="username" id="username" name="username">
     <label for="password">Password:</label>
     <input placeholder="password" id="password" name="password">
     <button>ENTER</button>
 </form>
-
+</div>
 <c:choose>
     <c:when test="${param.username.equalsIgnoreCase('admin') && param.password.equalsIgnoreCase('password')}">
         <% response.sendRedirect("profile.jsp");%>
