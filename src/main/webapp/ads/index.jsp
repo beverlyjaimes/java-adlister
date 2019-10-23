@@ -20,6 +20,7 @@
         <h2>${ad.userId}</h2>
         <p>Title: ${ad.title}</p>
         <p>Description: ${ad.description}</p>
+        <p>${ad.id}</p>
     </div>
 </c:forEach>
 
